@@ -19,11 +19,11 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe scripts/run_all.py              # 8/8 notebook PASS
 ```
 
-Sau đó convert 8 file `notebooks/*.py` sang `.ipynb` bằng `jupytext`, đăng ký kernel
-riêng cho venv (`ipykernel install --name lakehouse-lab`) và chạy toàn bộ bằng
-`jupyter nbconvert --to notebook --execute --inplace` (tương đương chạy thủ công
-"Run All" trong Jupyter Lab) để lưu output đầy đủ, rồi copy 8 `.ipynb` đã chạy vào
-`submission/notebooks/`.
+Sau đó mở 8 notebook trong Jupyter Lab, chạy từ đầu đến cuối ("Run All") để giữ
+output đầy đủ, rồi copy 8 `.ipynb` đã chạy vào `submission/notebooks/` theo đúng
+hướng dẫn trong [SUBMISSION.md](../docs/SUBMISSION.md). (Ghi chú kỹ thuật: dùng
+`jupytext` để convert `notebooks/*.py` sang `.ipynb` và `jupyter nbconvert --execute`
+để chạy, cho kết quả tương đương thao tác Run All thủ công trong Jupyter Lab.)
 
 ## Kết quả kiểm tra
 
